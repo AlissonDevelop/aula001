@@ -1,0 +1,3 @@
+Passo a passo como fazer CRUD em Python e MySql
+
+No terminal do index.py, deve ser feito o download do mysql com o seguinte comando: pip install mysql-connector-python

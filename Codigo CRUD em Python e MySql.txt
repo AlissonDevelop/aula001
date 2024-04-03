@@ -1,0 +1,69 @@
+import mysql.connector
+
+conexao = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='',
+    database='db_crud',
+)
+cursor = conexao.cursor()
+
+#CRUD
+#comando = f'INSERT INTO vendas (nome_produto, valor) VALUES ("{nome_produto}", {valor})'
+#cursor.execute(comando)
+#conexao.commit() #Edita o banco de dados
+#resultado = cursor.fetchall() #Ler o banco de dados
+
+cursor.close()
+conexao.close()
+
+#CREATE
+#nome_produto = "tamininha"
+#valor = 8
+#comando = f'INSERT INTO vendas (nome_produto, valor) VALUES ("{nome_produto}", {valor})'
+#cursor.execute(comando)
+#conexao.commit() #Edita o banco de dados
+
+#READ
+comando = f'SELECT* FROM vendas'
+cursor.execute(comando)
+resultado = cursor.fetchall() #Ler o banco de dados
+print(resultado)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

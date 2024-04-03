@@ -1,0 +1,37 @@
+print("===EXEMPLO 01===")
+print(int(1.97348728))
+print("===EXEMPLO 02===")
+print(int("10"))
+print("===EXEMPLO 03===")
+print(float("10.10"))
+print("===EXEMPLO 04===")
+print(float(100))
+
+
+
+valor = 10
+valor_str = str(valor)
+
+
+
+print("===EXEMPLO 05===")
+print(type(valor))
+print("===EXEMPLO 06===")
+print(type(valor_str))
+print("===EXEMPLO 07===")
+print(100 / 2)
+print("===EXEMPLO 08===")
+print(100 // 2)
+
+
+
+
+
+
+
+
+
+
+
+
+

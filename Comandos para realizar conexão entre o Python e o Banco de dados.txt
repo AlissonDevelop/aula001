@@ -1,0 +1,20 @@
+Comandos para realizar conexão entre o Python e o Banco de dados
+
+CREATE TABLE `db_crud`.`vendas` (
+  `idVendas` INT NOT NULL AUTO_INCREMENT,
+  `nome_produto` VARCHAR(45) NULL,
+  `valor` INT NULL,
+  PRIMARY KEY (`idVendas`));
+
+
+
+
+import mysql.connector
+
+conexao = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='',
+    database='db_crud',
+)
+cursor = conexao.cursor()
